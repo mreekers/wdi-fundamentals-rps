@@ -25,7 +25,7 @@ function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return return var move = "some_value":
+    return var move = "some_value":
             move = move || getInput();
 }
 
@@ -33,7 +33,8 @@ function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
+    return var move = "some_value":
+            move = move || getInput();
 }
 
 function getWinner(playerMove,computerMove) {
@@ -41,7 +42,43 @@ function getWinner(playerMove,computerMove) {
     // Write code that will set winner to either 'player', 'computer', or 'tie' based on the values of playerMove and computerMove.
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
-    /* YOUR CODE HERE */
+    var x 
+var y 
+if (x == 1) {
+    playerMove = Rock
+} else if (x == 2) {
+    playerMove = Scissors
+} else if (x == 3) {
+    playerMove = Paper
+}
+if (y == 1) {
+    computerMove = Rock
+} else if (y == 2) {
+    computerMove = Scissors
+} else if (y == 3) {
+    computerMove = Paper
+}
+if (playerMove == Rock && computerMove == Scissors) {
+    winner = player
+} else if (playerMove == Rock && computerMove = Paper) {
+    winner = computer
+} else if (playerMove = Rock && computerMove = Rock) {
+    winner = tie 
+}
+if (playerMove = Scissors && computerMove = Rock) {
+    winner = computer
+} else if (playerMove = Scissors && computerMove = Paper) {
+    winner = player
+} else if (playerMove = Scissors && computerMove = Scissors) {
+    winner = tie
+}
+if (playerMove = Paper && computerMove = Rock) {
+    winner = player
+} else if (playerMove = Paper && computerMove = Scissors) {
+    winner = computer
+} else if (playerMove = Paper && computerMove = Paper) {
+    winner = tie
+}
     return winner;
 }
 
